@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="film_bottom_sheet_start_expanded">true</bool>
+</resources>

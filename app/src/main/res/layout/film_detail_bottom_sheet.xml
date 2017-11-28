@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/film_detail_bottom_sheet_height"
+    android:background="@color/film_detail_bottom_sheet_bg"
+    app:behavior_peekHeight="@dimen/film_detail_bottom_sheet_peek_height"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/film_detail_bottom_sheet_padding_bottom">
+
+        <ImageView
+            android:id="@+id/film_bottom_sheet_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/film_bottom_sheet_back_margin_start"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="@dimen/film_bottom_sheet_back_padding"
+            app:layout_constraintBottom_toBottomOf="@+id/film_detail_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/film_detail_title"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/film_detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_title_margin_end"
+            android:layout_marginStart="@dimen/film_detail_title_margin_start"
+            android:layout_marginTop="@dimen/film_detail_title_margin_top"
+            android:ellipsize="end"
+            android:maxLines="@integer/film_title_max_lines"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="@dimen/film_detail_title_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/film_bottom_sheet_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Movie Title" />
+
+        <TextView
+            android:id="@+id/film_detail_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginTop="@dimen/film_detail_description_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_title"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sollicitudinpurus a felis rhoncus varius. Morbi eros est, molestie eget lobortis et, rhoncus et arcu" />
+
+        <TextView
+            android:id="@+id/film_detail_locations_title"
+            style="@style/BottomSheetTitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginTop="@dimen/film_detail_locations_title_margin_top"
+            android:text="@string/film_detail_bottom_sheet_locations_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_description" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/film_detail_locations_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_locations_title"
+            tools:listitem="@layout/film_detail_location_item" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_title"
+            style="@style/BottomSheetTitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_content_margin"
+            android:layout_marginTop="@dimen/film_detail_bottom_sheet_actor_title_margin_vertical"
+            android:text="@string/film_detail_bottom_sheet_actors_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_locations_recycler" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_1"
+            style="@style/BottomSheetActorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_actor_margin"
+            android:layout_marginTop="@dimen/film_detail_bottom_sheet_actor_margin_vertical"
+            android:drawableStart="@drawable/ic_actor_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_actor_title"
+            tools:text="Actor 1" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_2"
+            style="@style/BottomSheetActorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_bottom_sheet_actor_margin"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_actor_margin"
+            android:layout_marginTop="@dimen/film_detail_bottom_sheet_actor_margin_vertical"
+            android:drawableStart="@drawable/ic_actor_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_actor_1"
+            tools:text="Actor 2" />
+
+        <TextView
+            android:id="@+id/film_detail_actor_3"
+            style="@style/BottomSheetActorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/film_detail_bottom_sheet_actor_margin"
+            android:layout_marginStart="@dimen/film_detail_bottom_sheet_actor_margin"
+            android:layout_marginTop="@dimen/film_detail_bottom_sheet_actor_margin_vertical"
+            android:drawableStart="@drawable/ic_actor_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/film_detail_actor_2"
+            tools:text="Actor 3" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

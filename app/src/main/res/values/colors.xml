@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_floating_search">#FAFAFA</color>
+    <color name="film_image_loading">#F0F0F0</color>
+    <color name="film_overview_divider">#77000000</color>
+    <color name="ic_directions_walk">@android:color/white</color>
+    <color name="ic_back">#DD000000</color>
+    <color name="film_detail_bottom_sheet_bg">@android:color/white</color>
+    <color name="film_detail_bottom_sheet_shadow">#22222222</color>
+</resources>
