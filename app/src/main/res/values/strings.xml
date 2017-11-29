@@ -10,6 +10,7 @@
         Swipe down to try again. If this issue continues, please contact support.</string>
     <string name="film_overview_loading_error_network">We were unable to update. Please check your internet connection.
         Swipe down to refresh.</string>
+    <string name="content_description_sort">Sort</string>
 
     <string name="film_detail_google_maps_unavailable">Google Maps required to get directions</string>
     <string name="film_detail_bottom_sheet_actors_title">Actors</string>
@@ -17,4 +18,6 @@
     <string name="film_detail_location_load_network_error">Location lookup failed due to connectivity issues</string>
     <string name="film_detail_location_load_system_error">Location lookup failed due to an internal error</string>
     <string name="film_detail_location_load_retry">Retry</string>
+    <string name="content_description_back">Back</string>
+
 </resources>

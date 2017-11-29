@@ -52,9 +52,9 @@ class FilmDetailBottomSheetViewHolder {
     @BindView(R.id.film_detail_locations_title)
     TextView locationsTitle;
 
-    private NestedScrollView bottomSheetView;
-    private FilmLocationsAdapter filmLocationsAdapter;
-    private BottomSheetBehavior bottomSheetBehavior;
+    private final NestedScrollView bottomSheetView;
+    private final FilmLocationsAdapter filmLocationsAdapter;
+    private final BottomSheetBehavior bottomSheetBehavior;
 
     FilmDetailBottomSheetViewHolder(NestedScrollView bottomSheetView,
                                     FilmLocationsAdapter.LocationSelectionListener locationSelectionListener) {

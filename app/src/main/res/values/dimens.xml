@@ -16,7 +16,6 @@
     <dimen name="floating_overview_bar_sort_margin_end">8dp</dimen>
     <dimen name="floating_overview_bar_sort_padding">8dp</dimen>
     <dimen name="film_detail_fab_margin">16dp</dimen>
-    <dimen name="ic_directions_walk">200dp</dimen>
     <dimen name="film_detail_bottom_sheet_peek_height">80dp</dimen>
     <dimen name="film_detail_bottom_sheet_content_margin">16dp</dimen>
     <dimen name="film_detail_bottom_sheet_height">240dp</dimen>

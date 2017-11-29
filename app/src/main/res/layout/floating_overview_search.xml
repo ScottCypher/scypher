@@ -32,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/floating_overview_bar_sort_margin_end"
             android:background="?android:selectableItemBackgroundBorderless"
+            android:contentDescription="@string/content_description_sort"
             android:padding="@dimen/floating_overview_bar_sort_padding"
             android:src="@drawable/ic_sort"
             app:layout_constraintBottom_toBottomOf="parent"
